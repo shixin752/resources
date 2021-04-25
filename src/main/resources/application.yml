@@ -1,0 +1,30 @@
+#符号"#"在最前面的窦唯待填项
+server:
+  port: 8083
+spring:
+  application:
+    name: resources
+  redis:
+    database: 0
+#    host: 000.000.000.000
+#    port: 6379
+    connect-timeout: 5000
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+#    password: xxxx
+jwt:
+#  secret: adsfdsfsdfdsfwetrwgfsdfsdfwsEFSEAFESF
+  # 有效期，单位秒，默认2周
+#  expire-time-in-second: 10000
+
+
+
+
+
+
+
+
+
