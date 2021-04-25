@@ -15,6 +15,7 @@
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
+        <jedis.version>3.5.2</jedis.version>
     </properties>
     <dependencies>
         <dependency>
@@ -26,6 +27,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <!-- A依赖B，B依赖C的情况。true的情况下A没有显式依赖C，则不依赖，false的情况下，强制A依赖C。（这里的false其实没什么用，pawcode已经是顶级依赖了）-->
+            <optional>false</optional>
+        </dependency>
+
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
         </dependency>
     </dependencies>
 
