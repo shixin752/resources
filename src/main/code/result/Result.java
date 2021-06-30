@@ -1,6 +1,6 @@
-package com.shixin.resources.domain.result;
+package result;
 
-import com.shixin.resources.domain.enums.ResultCodeEnum;
+import enums.ResultCodeEnum;
 import lombok.Data;
 
 @Data

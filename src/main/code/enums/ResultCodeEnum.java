@@ -1,4 +1,4 @@
-package com.shixin.resources.domain.enums;
+package enums;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
